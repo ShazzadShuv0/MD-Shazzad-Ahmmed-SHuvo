@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MD Shazzad Ahammed Shuvo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"> </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#awards-section" class="nav-link"><span>Awards</span></a></li>
+			  <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Academics</span></a></li> -->
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>MD Shazzad Ahammed Shuvo</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Learner  ',
+						'Traveller  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2 >Student | Department of EEE<br> Brac University</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+							<br>
+							<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+								<li class="ftco-animate normal-txt">Find me on  </li>
+								<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+								<li class="ftco-animate"><a href="https://www.facebook.com/shazzadahammed.shuvo/" target="_blank"><span class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.instagram.com/shazzad_ahammed_shuv0/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.linkedin.com/in/md-shazzad-ahammed-shuvo-908505274/" target="_blank"><span class="icon-linkedin"></span></a></li>
+								<li class="ftco-animate"><a href="https://x.com/ShazzadShuv0" target="_blank"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="https://wa.me/+8801987909394" target="_blank"><span class="icon-whatsapp"></span></a></li>
+							  </ul>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>MD Shazzad Ahammed Shuvo</span></p>
+										<p><span class="title-s">occupation: </span> <span>Student</span></p>
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Uttara, Dhaka, Bangladesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>C Language</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>PYTHON </span> <span class="pull-right">65%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Microsoft Office </span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Public Speaking </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> <span class="pull-right">1%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I’m an undergraduate student at BRAC University, pursuing my BSc degree in Electrical and Electronic Engineering. I am deeply passionate about technology and engineering solutions. Beyond academics, I am an avid reader, cyclist, and photography enthusiast. I enjoy expanding my horizons by exploring new technologies and enhancing my skills. I believe in a well-rounded approach to learning and actively engage in extracurricular activities. I look forward to utilizing my knowledge and skills to contribute positively to society and make an impact in the field of engineering.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<!-- <li class="d-flex"><span>Profile:</span> <span>Electrical and Electronic Engineering </span></li> -->
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science in Electrical and Electronic Engineering </span></li>
+									<li class="d-flex"><span>Language:</span> <span>Bangla, English</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Microsoft Office, Canva, Pspice</span></li>
+									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching, Cycling, Reading Books</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/md-shazzad-ahammed-shuvo-908505274/" target="_blank" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Dynamic and motivated Electrical and Electronic Engineering student at BRAC University, with a strong academic record and hands-on experience in C programming and Electrical works. Recognized for excellence with multiple scholarships, showcasing dedication and perseverance in achieving goals. Passionate about problem-solving, innovation, and leveraging technology to drive impactful solutions.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Physics Instructor </h2>
+						<span class="position">Study Decode</span>
+						<p class="mt-4">Study Decode, an online Ed-tech platform dedicated to enhancing students’ understanding of complex scientific concepts.
+							<ul>
+								<li>Deliver engaging and comprehensive online physics lessons to high school and university-level students.</li>
+								<li>Develop and  custom educational content, including lesson plans, quizzes, and study materials.</li>
+								<!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>Team Leader </h2>
+						<span class="position">Smart Fare Collector</span>
+						<p class="mt-4">Smart Fare Collector, an online IoT based project dedicated to revolationizing fare collection system for the public transports in Bangladesh.
+							<ul>
+								<li>Develop idea and solving existing problems through using IoT.</li>
+								<li>Lead the team and co-ordinate the full progress with most efficiency.</li>
+								<!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-Present</span>
+						<h2>General Member(HR Department)</h2>
+						<span class="position">BRAC University Electrical and Electronic Club (BUEEC)</span>
+						<p class="mt-4">BRAC University Electrical and Electronic Club (BUEEC) is one of the leading club of Brac University.
+							<ul>
+								<li>Assist in the recruitment and onboarding process of new club members and Maintain and update member records to ensure accurate communication and engagement.</li>
+								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li> -->
+								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2022</span>
+						<h2>General Member(Mathematics Department)</h2>
+						<span class="position">Tesla Lab</span>
+						<p class="mt-4">Tesla Lab is one of the leading online based education platform in Bangladesh which main task was to organise the scientific competition all over the country.
+							<ul>
+								<li>Develop educational content, including questions, lesson plans, quizzes, and study materials.</li>
+								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li> -->
+								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-Present</span>
+    					<h2>Bachelor of Science in EEE</h2>
+    					<span class="position"> BRAC University</span>
+    					<p class="mt-4">Grade: A (First Class) </p>
+    				</div>
+
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2021</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Rajuk Uttara Model College</span>
+    					<p class="mt-4">Grade: GPA- 5.0 (A+) </p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2019</span>
+    					<h2> Secondary School</h2>
+    					<span class="position">Ansar VDP School & College</span>
+    					<p class="mt-4">Grade: GPA- 5.0 (A+) </p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016</span>
+    					<h2> Junior Secondary School</h2>
+    					<span class="position">Ansar VDP School & College</span>
+    					<p class="mt-4">Grade: GPA- 5.0 (A+) </p>
+    				</div>
+				</div>
+
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/drive/folders/115Hxwo23wg8o_oTGwsON7mhw01d4rV52?usp=drive_link" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+
+	<section class="ftco-section ftco-no-pb" id="awards-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Awards</h1>
+            <h2 class="mb-4">Awards</h2>
+            <p>Throughout my academic journey, I have been honored with several prestigious awards and scholarships in recognition of my dedication and achievements. These accolades reflect my commitment to excellence and my passion for continuous growth and learning.</p>
+          </div>
+        </div>
+
+
+		<!-- <div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br> -->
+
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<!-- <h2> Brac University Merit Scholarship </h2> -->
+						<h2 class="heading"><a href="https://drive.google.com/file/d/1opUtQICehh7iGcS7m2x3dHdnEPXwKr1J/view?usp=drive_link" target="_blank">Brac University Merit Scholarship</a></h2>
+						<span class="position"> 50% Tuition Fee Waiver </span><br>
+						<span class="position">2024</span><br>
+    					<span class="position"> BRAC University</span>
+    					<p class="mt-4">I was awarded the "Brac University Merit Scholarship," which granted me a partial Tuition Fee Waiver based on my academic performance. This recognition from Brac University was a significant achievement in my university life, reflecting the hard work and dedication I put into my studies. This scholarship not only eased the financial burden of my education but also inspired me to continue striving for excellence in my academic pursuits.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+						<h2 class="heading"><a href="https://drive.google.com/drive/folders/1tOfvWMzI48XlsAqv7ILYnZ1PJY_8b_sm?usp=drive_link" target="_blank">NIT Meghalaya Merit Scholarship</a></h2>
+						<span class="position"> 50% Tuition Fee Waiver  </span><br>
+						<span class="position">2022</span><br>
+    					<span class="position"> National Institute of Technology Meghalaya</span>
+    					<p class="mt-4">I received an acceptance letter from the prestigious NIT Meghalaya for the B. Tech program in EEE along with a 50% tuition fee waiver under G-2 Scholarship Grade. This achievement was a significant milestone in my academic journey. Moreover, I was honored to receive acceptance letters from other top-ranked institutions, including Chandigarh University, KIIT, and VIT with a 50% tuition fee waiver.</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+						<h2 class="heading"><a href="#">Bangladesh-India Friendship Scholarship</a></h2>
+						<span class="position"> One-time Stipend  </span><br>
+						<span class="position">2021</span><br>
+    					<span class="position"> Ministry of Liberation War Affairs, Bangladesh & Ministry of Foreign Affairs, India</span>
+    					<p class="mt-4">I was honored to receive the "Bangladesh-India Friendship Scholarship," marking my first international scholarship. This scholarship motivated me to aim higher and broaden my horizons, reinforcing my commitment to academic excellence.</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+						<h2 class="heading"><a href="https://drive.google.com/drive/folders/1iYO36blaaJ7uHFteLQBqqcEu8KnbvPTK?usp=drive_link" target="_blank"> Government Merit Scholarship</a></h2>
+						<span class="position"> Talent pool  </span><br>
+						<span class="position">2013 - 2018 </span><br>
+    					<span class="position"> Ministry of Education, Bangladesh</span><br><br>
+    					<p class="mt-4">I was honored to receive both the PSC & JSC Merit Scholarship respectively in 2013 & 2016 which not only granted me the full-free studentship but also provided me a bare minimum stipend which motivated me to excel further. This opportunity allowed me to focus entirely on my studies and it laid a strong foundation for my future academic achievements.</p>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/drive/folders/1k_T4RcfCEvSBqRnGEyXY9tzYnUZ2IF_z?usp=drive_link" target="_blank" class="btn btn-primary py-4 px-5">Extra-Curricular Activities</a></p>
+    			</div>
+    		</div>
+
+    	</div>
+    </section>
+<br>
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+		  <div class="row d-md-flex align-items-center">
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="44">0</strong>
+				  <span>Achievements</span><br>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="11">0</strong>
+				  <span>Scholarship</span><br>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="2">0</strong>
+				  <span>Medal</span><br>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  <strong class="number" data-number="2">0</strong>
+				  <span>Appearance on VC's List</span>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				<div class="block-18">
+				  <div class="text">
+					<strong class="number" data-number="1">0</strong>
+					<span>Appearance on Dean's List</span>
+				  </div>
+				</div>
+			  </div>
+
+		  </div>
+		</div>
+	</section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Here are some of the projects I have worked on. These projects span a variety of disciplines where I applied my theoretical knowledge to practical scenarios, while using innovative approaches to tackle real-world challenges. </p>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/drive/folders/1bwEusfLzFjZA7eFWSf1fxu7bP5k502cx?usp=sharing" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/drive/folders/1bwEusfLzFjZA7eFWSf1fxu7bP5k502cx?usp=sharing" target="_blank">Smart Fare Collection System </a></h3>
+                <p>Our Smart Fare collection system proposes a unified, IoT-enabled RFID-based fare collection system that will automate the fare calculation and collection process.
+				</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://drive.google.com/drive/folders/1JgxazigsggDbQ9tZaNkJrSxFIfZljQYm?usp=sharing" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/drive/folders/1JgxazigsggDbQ9tZaNkJrSxFIfZljQYm?usp=sharing" target="_blank">Traffic Enforcement System (Traens)</a></h3>
+                <p>Our Traffic Enforcement System addresses existing issues and solves them most efficiently.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://drive.google.com/drive/folders/1KiG6DqwpD7BTooF4rG1zI6Kr41SHxVlw?usp=drive_link" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://drive.google.com/drive/folders/1KiG6DqwpD7BTooF4rG1zI6Kr41SHxVlw?usp=drive_link" target="_blank">Designing a AC circuit to get resonance and maximum power to a given circuit.</a></h3>
+                <p>We designed the AC circuit meeting all the necessary outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div> -->
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="219">0</strong>
+                <span>Visitors</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="47">0</strong>
+                <span>Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_l.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<!-- <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4> -->
+						<br>
+						<p><a href="#"  class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Uttara, Dhaka, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-whatsapp"></span>
+          		</div>
+          		<h3 class="mb-4">Whatsapp</h3>
+	            <p><a href="https://wa.me/+8801987909394">+880 1*** ******</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:mdshazzadahammedshuvo@gmail.com">mdshazzadahammedshuvo<br>@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/drive/u/2/folders/115Hxwo23wg8o_oTGwsON7mhw01d4rV52" target="_blank">Resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+				<br>
+				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Find me on  </li>
+					<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					<li class="ftco-animate"><a href="https://www.facebook.com/shazzadahammed.shuvo/" target="_blank"><span class="icon-facebook"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/shazzad_ahammed_shuv0/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/md-shazzad-ahammed-shuvo-908505274/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"><a href="https://x.com/ShazzadShuv0" target="_blank"><span class="icon-twitter"></span></a></li>
+					<li class="ftco-animate"><a href="https://wa.me/+8801987909394" target="_blank"><span class="icon-whatsapp"></span></a></li>
+					<li class="ftco-animate"><a href="mailto:mdshazzadahammedshuvo@gmail.com"><span class="icon-paper-plane"></span></a></li>
+				  </ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://www.facebook.com/shazzadahammed.shuvo/" target="_blank">MD SHAZZAD AHAMMED SHUVO</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
